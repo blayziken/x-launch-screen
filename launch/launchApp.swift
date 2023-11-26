@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct launchApp: App {
+    
+    @StateObject var launchScreenManager = LaunchScreenManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                SignUpView()
+                
+                // Remove from view after api call has finished
+                if launchScreenManager.state != .finished {
+                    LaunchView()
+                }
+              
+            }.environmentObject(launchScreenManager)
         }
     }
 }

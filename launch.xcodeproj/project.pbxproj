@@ -14,6 +14,8 @@
 		AC195D4D2AFE2F0200D52872 /* launchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC195D4C2AFE2F0200D52872 /* launchTests.swift */; };
 		AC195D572AFE2F0200D52872 /* launchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC195D562AFE2F0200D52872 /* launchUITests.swift */; };
 		AC195D592AFE2F0200D52872 /* launchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC195D582AFE2F0200D52872 /* launchUITestsLaunchTests.swift */; };
+		AC79D32C2B1256650054FBC3 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79D32B2B1256650054FBC3 /* LaunchView.swift */; };
+		AC79D32F2B1258470054FBC3 /* LaunchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC79D32E2B1258470054FBC3 /* LaunchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		AC195D522AFE2F0200D52872 /* launchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = launchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC195D562AFE2F0200D52872 /* launchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchUITests.swift; sourceTree = "<group>"; };
 		AC195D582AFE2F0200D52872 /* launchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC79D32B2B1256650054FBC3 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		AC79D32E2B1258470054FBC3 /* LaunchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchManager.swift; sourceTree = "<group>"; };
+		ACAEE1C62B1246E500703D3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 		AC195D2F2AFE2F0000D52872 = {
 			isa = PBXGroup;
 			children = (
+				AC79D32E2B1258470054FBC3 /* LaunchManager.swift */,
 				AC195D3A2AFE2F0000D52872 /* launch */,
 				AC195D4B2AFE2F0200D52872 /* launchTests */,
 				AC195D552AFE2F0200D52872 /* launchUITests */,
@@ -94,8 +100,10 @@
 		AC195D3A2AFE2F0000D52872 /* launch */ = {
 			isa = PBXGroup;
 			children = (
+				ACAEE1C62B1246E500703D3D /* Info.plist */,
 				AC195D3B2AFE2F0000D52872 /* launchApp.swift */,
 				AC195D3D2AFE2F0000D52872 /* ContentView.swift */,
+				AC79D32B2B1256650054FBC3 /* LaunchView.swift */,
 				AC195D3F2AFE2F0200D52872 /* Assets.xcassets */,
 				AC195D412AFE2F0200D52872 /* Preview Content */,
 			);
@@ -257,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC79D32F2B1258470054FBC3 /* LaunchManager.swift in Sources */,
 				AC195D3E2AFE2F0000D52872 /* ContentView.swift in Sources */,
+				AC79D32C2B1256650054FBC3 /* LaunchView.swift in Sources */,
 				AC195D3C2AFE2F0000D52872 /* launchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,9 +430,9 @@
 				DEVELOPMENT_TEAM = XWGWNSXQT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = launch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,9 +459,9 @@
 				DEVELOPMENT_TEAM = XWGWNSXQT2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = launch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
